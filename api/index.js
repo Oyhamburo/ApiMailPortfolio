@@ -35,11 +35,11 @@ app.get("/api/breeds/:id", (req, res) => {
 })
 
 app.post("/api/test", (req, res) => {
-  let name = 'jeremias houyashd'
-  // const { name } = req.body
+  const { name } = req.body
+  let test = req.body
   // console.log(req.body)
   // console.log({ name })
-  res.json({ name })
+  res.json(test)
 })
 
 
