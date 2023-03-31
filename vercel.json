@@ -1,16 +1,16 @@
 {
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api"
+      "src": "/",
+      "dest": "/api/test"
     },
     {
-      "src": "/api/(.*)",
+      "src": "/api/test",
       "methods":[
         "POST",
         "GET"
       ],
-      "dest": "/api"
+      "dest": "/api/test"
     }
   ]
 }
