@@ -1,16 +1,12 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/api/test"
-    },
-    {
-      "src": "/api/test",
+      "source": "/api/(.*)",
+      "destination": "/api",
       "methods":[
         "POST",
         "GET"
-      ],
-      "dest": "/api/test"
+      ]
     }
   ]
 }
