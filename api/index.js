@@ -2,7 +2,7 @@ const app = require("express")()
 // const cors = require("cors")
 // const nodemailer = require("nodemailer")
 
-app.use(cors())
+// app.use(cors())
 
 const JsSearch = require("js-search")
 
