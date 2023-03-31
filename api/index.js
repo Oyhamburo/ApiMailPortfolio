@@ -36,10 +36,9 @@ app.get("/api/breeds/:id", (req, res) => {
 
 app.post("/api/test", (req, res) => {
   const { name } = req.body
-  let test = req.body
-  // console.log(req.body)
-  // console.log({ name })
-  res.json(test)
+  console.log('Nombre desde la consola ',name)
+  let test = 'test no tomo nada el body'
+  res.status(200).json(test)
 })
 
 
