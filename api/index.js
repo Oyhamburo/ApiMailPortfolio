@@ -1,4 +1,8 @@
 const app = require("express")()
+const cors = require("cors")
+const nodemailer = require("nodemailer")
+
+app.use(cors())
 
 const JsSearch = require("js-search")
 
@@ -29,5 +33,13 @@ app.get("/api/breeds/:id", (req, res) => {
   const { id } = req.params
   res.send(breeds[id])
 })
+
+app.post("/api/test", (req, res) => {
+  const { name } = req.body
+  console.log(req.body)
+  console.log({ name })
+  res.send({ name })
+})
+
 
 module.exports = app
