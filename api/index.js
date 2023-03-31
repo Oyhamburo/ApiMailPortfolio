@@ -34,7 +34,7 @@ app.get("/api/breeds/:id", (req, res) => {
   res.send(breeds[id])
 })
 
-app.get("/api/test", (req, res) => {
+app.post("/api/test", (req, res) => {
   let name = 'jeremias houyashd'
   // const { name } = req.body
   // console.log(req.body)
